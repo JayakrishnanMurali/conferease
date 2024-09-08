@@ -1,5 +1,6 @@
 import { Toaster } from "@/components/ui/toaster";
 import { ClerkProvider } from "@clerk/nextjs";
+import "@stream-io/video-react-sdk/dist/css/styles.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -21,6 +22,9 @@ export const metadata: Metadata = {
     The best way to schedule and manage your meetings. 
     Conferease is a simple and easy-to-use meeting scheduler 
     that helps you organize your meetings and events with ease.`,
+  icons: {
+    icon: "/icons/logo.svg",
+  },
 };
 
 export default function RootLayout({
