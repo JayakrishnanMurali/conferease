@@ -9,7 +9,7 @@ interface MeetingModalProps {
   title: string;
   description?: string;
   className?: string;
-  buttonText: string;
+  buttonText?: string;
   handleClick: () => void;
   buttonIcon?: string;
   image?: string;
@@ -55,7 +55,12 @@ export const MeetingModal = ({
             className="bg-blue-1 gap-2 focus-visible:ring-0 focus-visible:ring-offset-0"
           >
             {buttonIcon && (
-              <Image src={buttonIcon} width={13} height={13} alt={buttonText} />
+              <Image
+                src={buttonIcon}
+                width={13}
+                height={13}
+                alt={"Button icon"}
+              />
             )}
             {buttonText ?? "Schedule Meeting"}
           </Button>

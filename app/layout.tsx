@@ -3,6 +3,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import "react-datepicker/dist/react-datepicker.css";
 import "./globals.css";
 
 const geistSans = localFont({
